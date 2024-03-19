@@ -11,11 +11,13 @@ name = "xy_argparse"
 authors = [{ name = "helios", email = "yuyang.0515@qq.com" }]
 description = "xy_argparse 模块"
 
-dynamic = ["version", "readme"]
+dynamic = ["version"]
 
 classifiers = ["Programming Language :: Python :: 3.8"]
 
 dependencies = []
+
+readme = "README.md"
 
 [tool.setuptools.packages.find]
 where = ["./"]
@@ -27,4 +29,3 @@ include-package-data = true
 
 [tool.setuptools.dynamic]
 version = { file = "VERSION" }
-readme = { file = ["README.rst", "USAGE.rst", "README.md", "USAGE.md"] }

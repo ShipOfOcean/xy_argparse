@@ -17,89 +17,89 @@ pip install xy_argparse
 ## 开始
 
 ```python
-    # main.py
-    from argparse import Namespace
-    from xy_argparse.ArgParse import ArgParse
-    
-    class Runner(ArgParse):
+# main.py
+from argparse import Namespace
+from xy_argparse.ArgParse import ArgParse
 
-        @property
-        def version(self):
-            return "0.0.1"
+class Runner(ArgParse):
 
-        def __init__(self):
-            self.prog = "xy_conda"
-            self.description = "conda相关工具"
+    @property
+    def version(self):
+        return "0.0.1"
 
-        def main(self):
-            self.default_parser()
-            self.add_arguments()
-            self.parse_arguments()
-            if self.work:
-                self.run_arguments()
-            else:
-                self.parser.print_help()
+    def __init__(self):
+        self.prog = "xy_conda"
+        self.description = "conda相关工具"
 
-        def add_arguments(self):
-            self.add_argument(
-                flag="-w",
-                name="--work",
-                help_text="""
-                    工作方式:
-                    "backup",
-                    "install",
-                    "install_pack",
-                    "load",
-                """,
-            )
+    def main(self):
+        self.default_parser()
+        self.add_arguments()
+        self.parse_arguments()
+        if self.work:
+            self.run_arguments()
+        else:
+            self.parser.print_help()
 
-        def on_arguments(
-            self,
-            name,
-            value,
-            arguments=None,
-        ):
-            if name == "work":
-                if value == "backup":
-                    self.backup()
-                    return False
-                elif value == "load":
-                    self.load()
-                    return False
-                elif value == "install":
-                    self.install()
-                    return False
-                elif value == "install_pack":
-                    self.install_pack()
-                    return False
-            return True
+    def add_arguments(self):
+        self.add_argument(
+            flag="-w",
+            name="--work",
+            help_text="""
+                工作方式:
+                "backup",
+                "install",
+                "install_pack",
+                "load",
+            """,
+        )
 
-        def backup(self):
-            print("output backup")
+    def on_arguments(
+        self,
+        name,
+        value,
+        arguments=None,
+    ):
+        if name == "work":
+            if value == "backup":
+                self.backup()
+                return False
+            elif value == "load":
+                self.load()
+                return False
+            elif value == "install":
+                self.install()
+                return False
+            elif value == "install_pack":
+                self.install_pack()
+                return False
+        return True
 
-        def load(self):
-            print("output load")
+    def backup(self):
+        print("output backup")
 
-        def install(self):
-            print("output install")
+    def load(self):
+        print("output load")
 
-        def install_pack(self):
-            print("output install_pack")
+    def install(self):
+        print("output install")
 
-        @property
-        def work(self):
-            arguments = self.arguments()
-            if isinstance(arguments, Namespace):
-                return arguments.work
-            return None
+    def install_pack(self):
+        print("output install_pack")
 
-    if __name__ == "__main__":
-        runner = Runner()
-        runner.main()
+    @property
+    def work(self):
+        arguments = self.arguments()
+        if isinstance(arguments, Namespace):
+            return arguments.work
+        return None
+
+if __name__ == "__main__":
+    runner = Runner()
+    runner.main()
 ```
 
 ##### Shell
-```
+```bash
 python main.py -w backup
 # output backup
 ```
