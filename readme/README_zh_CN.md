@@ -1,8 +1,8 @@
 # xy_argparse
 
-- zh_CN [简体中文](readme/README_zh_CN.md)
-- zh_TW [繁体中文](readme/README_zh_TW.md)
-- en [English](readme/README_en.md)
+- zh_CN [简体中文](README_zh_CN.md)
+- zh_TW [繁体中文](README_zh_TW.md)
+- en [English](README_en.md)
 
 # 说明
 简单Python控制台输入输出工具封装.
@@ -116,8 +116,8 @@ python main.py -w backup
 
 如果小伙伴们觉得这些工具还不错的话，能否请咱喝一杯咖啡呢
 <br />
-![微信](readme/WeChat.png)
-![支付宝](readme/Alipay.png)
+![微信](WeChat.png)
+![支付宝](Alipay.png)
 
 
 ## 联系方式

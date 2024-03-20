@@ -1,8 +1,8 @@
 # xy_argparse
 
-- zh_CN [简体中文](readme/README_zh_CN.md)
-- zh_TW [繁体中文](readme/README_zh_TW.md)
-- en [English](readme/README_en.md)
+- zh_CN [简体中文](README_zh_CN.md)
+- zh_TW [繁体中文](README_zh_TW.md)
+- en [English](README_en.md)
 
 # Description
 Easy Python console tool wrappers
@@ -115,8 +115,8 @@ python main.py -w backup
 ## Donate
 
 If you think these tools are pretty good, Can you please have a cup of coffee?
-![WeChat](readme/WeChat.png)
-![Alipay](readme/Alipay.png)
+![WeChat](WeChat.png)
+![Alipay](Alipay.png)
 
 
 ## Contact
