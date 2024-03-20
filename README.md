@@ -10,7 +10,7 @@
 
 ## 安装
 
-```
+```bash
 pip install xy_argparse
 ```
 

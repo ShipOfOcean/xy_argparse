@@ -9,13 +9,13 @@
 
 ## 安装
 
-```
+```bash
 pip install xy_argparse
 ```
 
 ## 开始
 
-```
+```python
 # main.py
 from argparse import Namespace
 from xy_argparse.ArgParse import ArgParse
@@ -107,7 +107,7 @@ if __name__ == "__main__":
 ```
 
 ##### Shell
-```
+```bash
 python main.py -w backup
 # output backup
 ```

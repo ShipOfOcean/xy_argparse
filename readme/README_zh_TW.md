@@ -4,17 +4,17 @@
 - zh_TW [繁体中文](README_zh_TW.md)
 - en [English](README_en.md)
 
-# 说明
-简单Python控制台输入输出工具封装.
+# 說明
+簡單Python控制台輸入輸出工具封裝.
 
-## 安装
-```
+## 安裝
+```bash
 pip install xy_argparse
 ```
 
-## 开始
+## 開始
 
-```
+```python
 # main.py
 from argparse import Namespace
 from xy_argparse.ArgParse import ArgParse
@@ -32,7 +32,7 @@ class Runner(ArgParse):
     
     def __init__(self):
         self.prog = "xy_conda"
-        self.description = "conda相关工具"
+        self.description = "conda相關工具"
 
     def main(self):
         self.default_parser()
@@ -106,7 +106,7 @@ if __name__ == "__main__":
 ```
 
 ##### Shell
-```
+```bash
 python main.py -w backup
 # output backup
 ```
