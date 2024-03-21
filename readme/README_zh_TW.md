@@ -7,6 +7,8 @@
 # 說明
 簡單Python控制台輸入輸出工具封裝.
 
+<a href="https://github.com/ShipOfOcean/xy_argparse.git" target="_blank">Github位址</a>
+
 ## 安裝
 ```bash
 pip install xy_argparse
